@@ -84,6 +84,7 @@ a:hover {
   color: white;
   background: -webkit-linear-gradient(#fff, #555);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow:
     0 0.1rem 0rem rgba(0, 0, 0, 0.4),
