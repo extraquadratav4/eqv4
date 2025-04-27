@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
+import "./crt.css";
 import { sitetitle, sitedesc } from "@/utils/sitconf";
 import NavBar from "@/components/nav";
 
