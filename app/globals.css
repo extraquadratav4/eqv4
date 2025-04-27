@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #101010;
+  --foreground: #d0d0d0;
 }
 
 @theme inline {
@@ -17,6 +17,22 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+
+html {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: textflicker;
+  animation-duration: 0.02s;
 }
 
 body {
