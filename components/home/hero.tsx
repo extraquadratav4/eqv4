@@ -1,7 +1,6 @@
 import { herodesc } from "@/utils/sitconf";
 import NavBar from "../nav";
 import { TypewriterEffect } from "../typewriter";
-import Link from "next/link";
 
 export default function Hero() {
   const words_head = [
