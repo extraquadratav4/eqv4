@@ -8,6 +8,7 @@ export default function Hero() {
     { text: "Extraquadrata", className: "md:text-8xl font-bold uppercase" },
     { text: "V4", className: "md:text-8xl font-bold uppercase" },
   ]
+
   return (
     // <section className="h-screen background-image backdrop-brightness-50 bg-cover bg-center bg-[url('/static_final.jpg')]">
     <section className="h-screen background-image bg-cover bg-center">
@@ -18,6 +19,7 @@ export default function Hero() {
         <p className="mt-4 text-lg text-center max-w-2xl animate-(--textflicker)">
           {herodesc}
         </p>
+        {/* TODO: scroll func */}
       </div>
       <div className="piece scanlines noclick"></div>
       <div className="piece glow noclick"></div>
