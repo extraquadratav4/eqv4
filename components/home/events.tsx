@@ -5,8 +5,8 @@ import { events } from "@/utils/sitconf";
 
 export default function EventList() {
   const eventdetailhead = [
-    { text: "event", className: "text-2xl" },
-    { text: "details", className: "text-2xl" },
+    { text: "event", className: "text-4xl" },
+    { text: "details", className: "text-4xl" },
   ]
   return (
     <section className="font-mono output min-h-screen bg-[#001408]">

@@ -38,7 +38,7 @@ const events = [
       description: 'This is a description for the sixth event.'
   },
   {
-      name: 'meme',
+      name: 'memesis',
       description: 'This is a description for the seventh event.'
   },
 ];
