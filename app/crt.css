@@ -13,14 +13,12 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
-p {
+/* p {
   margin-bottom: 2rem;
-}
+} */
 
 a,
 a:visited {
@@ -102,6 +100,7 @@ a:hover {
   pointer-events: auto;
   text-shadow: 0rem 0.2rem 1rem rgba(3, 30, 17, 0.2);
   z-index: -1;
+  overflow: auto;
 }
 
 @keyframes crt-output {
@@ -125,6 +124,16 @@ a:hover {
   background-size: 100% 0.3rem;
   border-radius: 2rem;
   position: absolute;
+}
+.scanlines-txt {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.2) 70%,
+    rgba(0, 0, 0, 0.6)
+  );
+  /* background-size: 100% 0.3rem; */
 }
 
 /* Screen glow */
