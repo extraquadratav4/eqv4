@@ -14,7 +14,7 @@ export default function EventList() {
         <div className="mt-5">
           <TypewriterEffect words={eventdetailhead} />
         </div>
-        <div className="mt-10 max-w-6xl grid md:grid-cols-2 gap-10">
+        <div className="mt-10 max-w-7xl grid md:grid-cols-2 gap-10">
           {events.map((eventinf, key) =>
             <div
               key={key}
@@ -23,7 +23,7 @@ export default function EventList() {
                 key == 2 || key == 5 || key == 8 ? "text-right" : "",
                 "transition-all border p-5 hover:border-4 shadow-2xl shadow-green-950/50 output"
               )}>
-              <p className="font-bold text-2xl">{eventinf.name}</p>
+              <p className="font-bold text-3xl mb-5">{eventinf.name}</p>
               <p>{eventinf.description}</p>
             </div>
           )}
