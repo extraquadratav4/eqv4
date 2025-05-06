@@ -29,7 +29,7 @@ export default function EventList() {
               <p className="text-lg">{eventinf.shortDescription}</p>
               <Drawer>
                 <DrawerTrigger asChild className="mt-5">
-                  <button className="bg-green-950 px-4 py-2 hover:border">
+                  <button className="hover:bg-green-950 px-4 py-2 border">
                     <span className="text-lg font-semibold">View Rules</span>
                   </button>
                 </DrawerTrigger>
