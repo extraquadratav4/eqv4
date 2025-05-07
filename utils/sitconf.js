@@ -1,5 +1,5 @@
 const sitetitle = "Extraquadrata V4";
-const sitedesc = "Extraquadrata V4";
+const sitedesc = "Technology like art is a soaring exercise of the human imagination.” To be steady with our motion of development, it is vital for the youth to grasp every facet of technology and innovation. DPS Kolar Road has taken an initiative to contribute to this field. Extraquadrata would be our very first annual tech meet up hosted by and for high schoolers which will be held on the 6th of August. Our competitions would test the participant’s creativity and logical thinking to response time and sheer skill for tech savvies to people who crave to be";
 
 const herotitle = "Extraquadrata V4";
 const herodesc =

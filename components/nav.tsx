@@ -10,17 +10,17 @@ export default function NavBar() {
           </Link>
         </li>
         <li>
-          <Link href="/blog" className="hover:text-gray-400">
+          <Link href="/#events" className="hover:text-gray-400">
             events
           </Link>
         </li>
         <li>
-          <Link href="/about" className="hover:text-gray-400">
+          <Link href="/register" className="hover:text-gray-400">
             register
           </Link>
         </li>
         <li>
-          <Link href="/services" className="hover:text-gray-400">
+          <Link href="/team" className="hover:text-gray-400">
             about
           </Link>
         </li>
