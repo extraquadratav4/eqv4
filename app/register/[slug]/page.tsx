@@ -45,6 +45,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
     // Handle form submission logic here
     console.log("submitting form with the following data", { schoolName, teacher, slug, teamMembers });
     try {
@@ -185,7 +186,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                   Register
                 </button>
                 <div className="mt-2 px-5 text-center md:text-left">
-                  {isLoading && <p className="text-green-950">Loading...</p>}
+                  {isLoading && <p className="text-green-800">Loading...</p>}
                   {isError && <p className="text-red-500">An error occurred. Please try again.</p>}
                   {isSuccess && <p className="text-green-500">Registration successful!</p>}
                 </div>
