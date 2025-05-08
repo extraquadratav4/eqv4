@@ -18,7 +18,6 @@ export default function Hero() {
         <p className="mt-4 text-lg text-center max-w-2xl animate-(--textflicker)">
           {herodesc}
         </p>
-        {/* TODO: scroll func */}
       </div>
       <div className="piece scanlines noclick"></div>
       <div className="piece glow noclick"></div>

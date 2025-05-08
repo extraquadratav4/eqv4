@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 
 import { events } from "@/utils/sitconf";
 import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "../ui/drawer";
+import Link from "next/link";
 
 export default function EventList() {
   const eventdetailhead = [
@@ -27,6 +28,7 @@ export default function EventList() {
               )}>
               <p className="font-bold text-4xl mb-1">{eventinf.name}</p>
               <p className="text-lg">{eventinf.shortDescription}</p>
+              <Link href={`/register/${eventinf.slug}`} className="text-lg mx-5">register</Link>
               <Drawer>
                 <DrawerTrigger asChild className="mt-5">
                   <button className="hover:bg-green-950 px-4 py-2 border">

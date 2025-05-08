@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./crt.css";
 import { sitetitle, sitedesc } from "@/utils/sitconf";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono`}
       >
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

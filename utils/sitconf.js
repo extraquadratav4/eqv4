@@ -8,6 +8,7 @@ const herodesc =
 const events = [
   {
     name: "scio",
+    slug: "scio",
     description:
       "Quizzing is an art form for people who find solace in perpetually striving to attain more knowledge about everything. Scio tests a person's level of knowledge about current affairs and general awareness related to IT, the history of companies, and their products. Along with that, it further challenges participants by adding another layer of complexity: teamwork. Along with being well-informed, to succeed in this event, participants ought to have a strong command of communication and coordination ",
     shortDescription:
@@ -49,6 +50,7 @@ const events = [
   },
   {
     name: "site incroyable",
+    slug: "site-incroyable",
     description:
       "Site Incroyable is a Web Development event where we test participants' masterships to create fast, efficient, optimized, and spellbinding websites. Web development languages are among the most aspired after programming skill sets, with JavaScript currently in the lead as a growing number of conventional applications move to web platforms. Web design encompasses many different skills and domains in the exhibition and supervision of websites, from ingenious design and scripting. Accessibility remains a rudimentary of any website development project, transpiring that websites are accessible by anyone, on any device, anywhere in the world.",
     shortDescription:
@@ -86,6 +88,7 @@ const events = [
   },
   {
     name: "esprit decode",
+    slug: "esprit-decode",
     description:
       "The dawn of this century came with the advent of a new sport, competitive programming. This competition challenges participants' ability to produce optimized, efficient, scalable, and readable solutions to tricky questions in four highly challenging rounds. To excel at this competition, a person needs to have outstanding skills and knowledge about data structures and algorithms and either python or the javascript programming language. However, to enjoy this event, there are no such requirements. We have curated a diverse array of questions that challenge and force participants to think outside the box, some of which require little expertise while others require exceptionalism.",
     shortDescription:
@@ -142,6 +145,7 @@ const events = [
   },
   {
     name: "suiveur",
+    slug: "suiveur",
     description: "This is a description for the fourth event.",
     shortDescription: "A brief description of the fourth event.",
     rules: (
@@ -170,6 +174,7 @@ const events = [
   },
   {
     name: "polemos",
+    slug: "polemos",
     description:
       "Minecraft UHC and BuildBattle are thrilling minigames that captivate players by fusing strategy and creativity. Bedwars challenges teams to protect their beds while launching daring offensives, while BuildBattle lets players unleash artistic prowess within Minecraft's blocky world. These games celebrate the core spirit of Minecraft and have thrived by fostering a sense of camaraderie and endless creativity. They're a testament to the game's enduring appeal, thriving thanks to a dedicated community that constantly innovates, creating a timeless blend of strategy, artistry, and shared fun.",
     shortDescription:
@@ -243,6 +248,7 @@ const events = [
   },
   {
     name: "parabellum",
+    slug: "parabellum",
     description:
       "Dive into the electrifying world of esports at our premier gaming event. Immerse yourself in the realm of competitive gaming, where top-tier gamers clash in epic battles. Witness the latest gaming innovations, join discussions on the future of esports, and experience the thrill of victory and the agony of defeat in a dynamic fusion of skill, strategy, and adrenaline.",
     shortDescription:
@@ -282,6 +288,7 @@ const events = [
   },
   {
     name: "lux veritas implica",
+    slug: "lux-veritas-imlica",
     description: "This is a description for the seventh event.",
     shortDescription: "A brief description of the seventh event.",
     rules: (
@@ -298,6 +305,7 @@ const events = [
   },
   {
     name: "chroma",
+    slug: "chroma",
     description: "This is a description for the sixth event.",
     shortDescription: "A brief description of the sixth event.",
     rules: (
@@ -317,6 +325,7 @@ const events = [
   },
   {
     name: "memesis",
+    slug: "memesis",
     description: "This is a description for the seventh event.",
     shortDescription: "A brief description of the seventh event.",
     rules: (
