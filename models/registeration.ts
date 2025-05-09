@@ -7,7 +7,7 @@ const registrationSchema = new mongoose.Schema({
       "parabellum",
       "polemos",
       "suiver",
-      "lux-veritas-implica",
+      "lux-veritas-implicas",
       "chroma",
       "memesis",
       "scio",

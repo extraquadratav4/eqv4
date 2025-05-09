@@ -287,7 +287,7 @@ const events = [
     ),
   },
   {
-    name: "lux veritas implica",
+    name: "lux veritas implicas",
     slug: "lux-veritas-imlica",
     description: "This is a description for the seventh event.",
     shortDescription: "A brief description of the seventh event.",
@@ -387,4 +387,19 @@ const info_blocks = [
   },
 ];
 
-export { events, sitetitle, sitedesc, herotitle, herodesc, info_blocks };
+const core_mem = [
+  {
+    name: "Varad Sharma",
+    role: "Head",
+    profile: "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
+    image: "/favicon.svg",
+  },
+  {
+    name: "Aarush Shrivastava",
+    role: "Head",
+    profile: "Aarush Shrivastava is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
+    image: "/favicon.svg",
+  }
+];
+
+export { events, sitetitle, sitedesc, herotitle, herodesc, info_blocks, core_mem };

@@ -12,7 +12,7 @@ const teamSizes: { [key: string]: number } = {
   "suiveur": 3,
   "polemos": 2,
   "parabellum": 6,
-  "lux-veritas-implica": 1,
+  "lux-veritas-implicas": 1,
   "chroma": 1,
   "memesis": 2,
 };
@@ -29,6 +29,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
 
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
 
   // Update teamMembers state based on the slug
@@ -73,6 +74,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
     } catch (error) {
       setIsError(true);
       setIsLoading(false);
+      setErrorMessage("An error occurred while submitting the form. Please try again.");
       console.error("Error submitting form", error);
     }
   };
@@ -145,6 +147,8 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                   />
                 </div>
               </div>
+              {/* Error Message */}
+              {isError && <p className="text-red-500">{errorMessage}</p>}
               {/* Team Members */}
               <div className="mt-5">
                 <h2 className="text-lg font-semibold">Team Members</h2>

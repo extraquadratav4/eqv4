@@ -44,10 +44,25 @@ export async function POST(request: Request) {
       suiveur: 3,
       polemos: 2,
       parabellum: 6,
-      "lux-veritas-implica": 1,
+      "lux-veritas-implicas": 1,
       chroma: 1,
       memesis: 2,
     };
+
+    const existingTeam = await team.findOne({
+      school,
+      event,
+    });
+    if (existingTeam) {
+      if (event === "lux-veritas-implicas") {
+        return new Response(
+          JSON.stringify({ message: "Team already exists" }),
+          {
+            status: 400,
+          }
+        );
+      }
+    }
 
     if (!teamSizes[event]) {
       return new Response("Invalid event slug", { status: 400 });
