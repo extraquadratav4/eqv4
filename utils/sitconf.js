@@ -402,4 +402,34 @@ const core_mem = [
   }
 ];
 
-export { events, sitetitle, sitedesc, herotitle, herodesc, info_blocks, core_mem };
+const team_leads = [
+  {
+    name: "Aarush Shrivastava",
+    role: "Scio",
+    profile: "Aarush is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
+    image: "/favicon.svg",
+  },
+  {
+    name: "Varad Sharma",
+    role: "Esprit Decode, Site Incroyable",
+    profile: "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
+    image: "/favicon.svg",
+  }
+];
+
+const event_mem = [
+  {
+    name: "Jhon Doe",
+    role: "Event 1",
+    profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "/favicon.svg",
+  },
+  {
+    name: "Jane Smith",
+    role: "Event 2",
+    profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "/favicon.svg",
+  }
+];
+
+export { events, sitetitle, sitedesc, herotitle, herodesc, info_blocks, core_mem, team_leads, event_mem };
