@@ -432,4 +432,19 @@ const event_mem = [
   }
 ];
 
-export { events, sitetitle, sitedesc, herotitle, herodesc, info_blocks, core_mem, team_leads, event_mem };
+const alumini = [
+  {
+    name: "Dhairya Garg",
+    role: "Alumini",
+    profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "/favicon.svg",
+  },
+  {
+    name: "Om Pratap Dhakar",
+    role: "Alumini",
+    profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "/favicon.svg",
+  }
+];
+
+export { events, sitetitle, sitedesc, herotitle, herodesc, info_blocks, core_mem, team_leads, event_mem, alumini };
