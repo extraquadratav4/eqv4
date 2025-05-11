@@ -1,7 +1,7 @@
 import { connectDB } from "@/lib/connect";
 import member from "@/models/member";
 
-export default async function GET(req: Request) {
+export async function GET(req: Request) {
   const body = await req.json();
   const memberid = body.member;
 
