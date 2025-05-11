@@ -24,8 +24,9 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
   const [teacher, setTeacher] = useState({
     name: "",
     email: "",
+    phoneno: "",
   });
-  const [teamMembers, setTeamMembers] = useState([{ name: "", email: "" }]);
+  const [teamMembers, setTeamMembers] = useState([{ name: "", phoneno: "", email: "" }]);
 
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -35,7 +36,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
   // Update teamMembers state based on the slug
   useEffect(() => {
     const teamSize = teamSizes[slug.slug] || 2; // Default to 2 if slug is not found
-    setTeamMembers(Array.from({ length: teamSize }, () => ({ name: "", email: "" })));
+    setTeamMembers(Array.from({ length: teamSize }, () => ({ name: "", phoneno: "", email: "" })));
   }, [slug.slug]);
 
   const handleTeamMemberChange = (index: number, field: keyof typeof teamMembers[number], value: string) => {
@@ -61,6 +62,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
             school: schoolName,
             name: teacher.name,
             email: teacher.email,
+            phoneno: teacher.phoneno,
           },
           event: slug.slug,
           members: teamMembers,
@@ -99,8 +101,8 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
           />
           <div className="max-w-7xl mx-auto mt-10">
             <form onSubmit={handleSubmit} className="p-5 border shadow-2xl shadow-green-950/50">
-              <div className="grid md:grid-cols-2 gap-10">
-                <div className="md:col-span-2 flex flex-col">
+              <div className="grid md:grid-cols-3 gap-10">
+                <div className="md:col-span-3 flex flex-col">
                   <label htmlFor="teamname" className="text-lg font-semibold">
                     School Name
                   </label>
@@ -146,6 +148,21 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                     required
                   />
                 </div>
+                <div className="flex flex-col">
+                  <label htmlFor="teachmail" className="text-lg font-semibold">
+                    Teacher-InCharge Phone
+                  </label>
+                  <input
+                    type="text"
+                    id="teachphone"
+                    name="teachphone"
+                    className="border-2 p-2 mt-2"
+                    onChange={(e) => {
+                      setTeacher({ ...teacher, phoneno: e.target.value });
+                    }}
+                    required
+                  />
+                </div>
               </div>
               {/* Error Message */}
               {isError && <p className="text-red-500">{errorMessage}</p>}
@@ -153,7 +170,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
               <div className="mt-5">
                 <h2 className="text-lg font-semibold">Team Members</h2>
                 {teamMembers.map((member, index) => (
-                  <div key={index} className="grid md:grid-cols-2 gap-10 mt-4">
+                  <div key={index} className="grid md:grid-cols-3 gap-10 mt-4">
                     <div className="flex flex-col">
                       <label htmlFor={`member-name-${index}`} className="text-lg font-semibold">
                         Member {index + 1} Name
@@ -179,6 +196,20 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                         className="border-2 p-2 mt-2"
                         value={member.email}
                         onChange={(e) => handleTeamMemberChange(index, "email", e.target.value)}
+                        required
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor={`member-email-${index}`} className="text-lg font-semibold">
+                        Member {index + 1} Phone Number
+                      </label>
+                      <input
+                        type="text"
+                        id={`member-phone-${index}`}
+                        name={`member-phone-${index}`}
+                        className="border-2 p-2 mt-2"
+                        value={member.phoneno}
+                        onChange={(e) => handleTeamMemberChange(index, "phoneno", e.target.value)}
                         required
                       />
                     </div>

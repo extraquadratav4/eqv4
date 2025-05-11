@@ -1,5 +1,14 @@
 import mongoose from "mongoose";
 
+export interface Team {
+  _id: mongoose.Types.ObjectId;
+  school: string;
+  event: string;
+  verified: boolean;
+  teacher: mongoose.Types.ObjectId;
+  members: mongoose.Types.ObjectId[];
+}
+
 const teamSchema = new mongoose.Schema({
   school: {
     type: String,

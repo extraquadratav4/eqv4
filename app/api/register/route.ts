@@ -3,12 +3,20 @@ import member from "@/models/member";
 import teacher from "@/models/teacher";
 import team from "@/models/team";
 
-const createMember = async (memberData: { name: string; email: string }) => {
+const createMember = async (memberData: {
+  name: string;
+  phoneno: string;
+  email: string;
+}) => {
   const existingMember = await member.findOne({ email: memberData.email });
   if (existingMember) {
     throw new Error(`Member with email ${memberData.email} already exists`);
   }
-  const newMember = new member(memberData);
+  const newMember = new member({
+    name: memberData.name,
+    phoneno: memberData.phoneno,
+    email: memberData.email,
+  });
   await newMember.save();
   return newMember;
 };
@@ -17,6 +25,7 @@ const createTeacher = async (teacherData: {
   school: string;
   name: string;
   email: string;
+  phoneno: string;
 }) => {
   const existingTeacher = await teacher.findOne({ email: teacherData.email });
   if (existingTeacher) {
