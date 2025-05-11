@@ -44,26 +44,6 @@ export default function AdminPage() {
     fetchTeams();
   }, []);
 
-  const retrieveMember = async (id: ObjectId) => {
-    try {
-      const response = await fetch(`/api/member`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ member: id }),
-      });
-      if (!response.ok) {
-        throw new Error('Failed to fetch member');
-      }
-      const memberData = await response.json();
-      return memberData;
-    } catch (error) {
-      console.error('Error fetching member:', error);
-      return null;
-    }
-  };
-
   const RenderTeams = (teams: Team[], title: string) => {
 // todo display members
     return (
@@ -76,9 +56,9 @@ export default function AdminPage() {
               className="p-4 shadow-md hover:shadow-lg transition-shadow"
             >
               <h4 className="font-semibold">{team.school}</h4>
-              <p className="text-sm text-gray-600">Event: {team.event}</p>
-              <p className="text-sm text-gray-600">Verified: {team.verified ? "Yes" : "No"}</p>
-              <p className="text-sm text-gray-600">Members: {team.members.join(", ")}</p>
+              <p className="text-sm text-gray-400">Event: {team.event}</p>
+              <p className="text-sm text-gray-400">Verified: {team.verified ? "Yes" : "No"}</p>
+              <p className="text-sm text-gray-400">Members: {team.members.map((member) => 'name' in member ? member.name : "Unknown").join(", ")}</p>
               {/* Add more details here if available */}
             </div>
           ))}

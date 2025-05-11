@@ -6,7 +6,9 @@ export interface Team {
   event: string;
   verified: boolean;
   teacher: mongoose.Types.ObjectId;
-  members: mongoose.Types.ObjectId[];
+  members:
+    | mongoose.Types.ObjectId[]
+    | { _id: string; name: string; phoneno: string; email: string }[];
 }
 
 const teamSchema = new mongoose.Schema({
