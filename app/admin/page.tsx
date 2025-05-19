@@ -3,8 +3,7 @@
 
 import NavBar from "@/components/nav";
 import { Team } from "@/models/team";
-import { ObjectId } from "mongoose";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function AdminPage() {
   const [teams, setTeams] = useState<Team[]>([]);
