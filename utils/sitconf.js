@@ -208,35 +208,35 @@ const team_leads = [
     role: "Esprit Decode, Site Incroyable",
     profile: "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
     image: "/favicon.svg",
+  },
+  {
+    name: "Anshuman Pandey",
+    role: "Polemos",
+    profile: ".",
+    image: "/favicon.svg",
   }
 ];
 
 const event_mem = [
   {
-    name: "Jhon Doe",
+    name: "Anshuman Pandey",
     role: "Event 1",
-    profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    profile: ".",
     image: "/favicon.svg",
   },
-  {
-    name: "Jane Smith",
-    role: "Event 2",
-    profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/favicon.svg",
-  }
 ];
 
 const alumini = [
   {
     name: "Dhairya Garg",
     role: "Alumini",
-    profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    profile: ".",
     image: "/favicon.svg",
   },
   {
     name: "Om Pratap Dhakar",
     role: "Alumini",
-    profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    profile: ".",
     image: "/favicon.svg",
   }
 ];
