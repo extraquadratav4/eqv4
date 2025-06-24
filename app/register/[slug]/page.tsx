@@ -6,18 +6,22 @@ import NavBar from "@/components/nav";
 import { TypewriterEffect } from "@/components/typewriter";
 
 const teamSizes: { [key: string]: number } = {
-  "scio": 2,
+  scio: 2,
   "esprit-decode": 2,
   "site-incroyable": 2,
-  "suiveur": 3,
-  "polemos": 2,
-  "parabellum": 6,
+  suiveur: 3,
+  polemos: 2,
+  parabellum: 6,
   "lux-veritas-implicas": 1,
-  "chroma": 1,
-  "memesis": 2,
+  chroma: 1,
+  memesis: 2,
 };
 
-export default function RegisterPage({ params }: { params: Promise<{ slug: string }> }) {
+export default function RegisterPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const slug = use(params);
 
   const [schoolName, setSchoolName] = useState("");
@@ -26,7 +30,9 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
     email: "",
     phoneno: "",
   });
-  const [teamMembers, setTeamMembers] = useState([{ name: "", phoneno: "", email: "" }]);
+  const [teamMembers, setTeamMembers] = useState([
+    { name: "", phoneno: "", email: "" },
+  ]);
 
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -36,10 +42,20 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
   // Update teamMembers state based on the slug
   useEffect(() => {
     const teamSize = teamSizes[slug.slug] || 2; // Default to 2 if slug is not found
-    setTeamMembers(Array.from({ length: teamSize }, () => ({ name: "", phoneno: "", email: "" })));
+    setTeamMembers(
+      Array.from({ length: teamSize }, () => ({
+        name: "",
+        phoneno: "",
+        email: "",
+      })),
+    );
   }, [slug.slug]);
 
-  const handleTeamMemberChange = (index: number, field: keyof typeof teamMembers[number], value: string) => {
+  const handleTeamMemberChange = (
+    index: number,
+    field: keyof (typeof teamMembers)[number],
+    value: string,
+  ) => {
     const updatedTeamMembers = [...teamMembers];
     updatedTeamMembers[index][field] = value;
     setTeamMembers(updatedTeamMembers);
@@ -49,7 +65,12 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
     e.preventDefault();
     setIsLoading(true);
     // Handle form submission logic here
-    console.log("submitting form with the following data", { schoolName, teacher, slug, teamMembers });
+    console.log("submitting form with the following data", {
+      schoolName,
+      teacher,
+      slug,
+      teamMembers,
+    });
     try {
       const response = await fetch("/api/register", {
         method: "POST",
@@ -76,7 +97,9 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
     } catch (error) {
       setIsError(true);
       setIsLoading(false);
-      setErrorMessage("An error occurred while submitting the form. Please try again.");
+      setErrorMessage(
+        "An error occurred while submitting the form. Please try again.",
+      );
       console.error("Error submitting form", error);
     }
   };
@@ -89,7 +112,14 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
 
   return (
     <section className="h-screen background-image bg-cover bg-center">
-      {slug.slug !== "scio" && slug.slug !== "esprit-decode" && slug.slug !== "site-incroyable" && slug.slug !== "suiveur" && slug.slug !== "polemos" && slug.slug !== "parabellum" && slug.slug !== "lux-veritas-imlica" && slug.slug !== "chroma" && slug.slug !== "memesis" ? (
+      {slug.slug !== "scio" &&
+      slug.slug !== "esprit-decode" &&
+      slug.slug !== "site-incroyable" &&
+      slug.slug !== "suiveur" &&
+      slug.slug !== "polemos" &&
+      slug.slug !== "lux-veritas-imlica" &&
+      slug.slug !== "chroma" &&
+      slug.slug !== "memesis" ? (
         <h1>this event does not exist</h1>
       ) : (
         <div className="piece output flex flex-col items-center h-screen backdrop-brightness-50 font-mono animate-(--textflicker)">
@@ -100,11 +130,14 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
             cursorClassName="md:h-[2rem] md:w-[32px]"
           />
           <div className="max-w-7xl mx-auto mt-10">
-            <form onSubmit={handleSubmit} className="p-5 border shadow-2xl shadow-green-950/50">
+            <form
+              onSubmit={handleSubmit}
+              className="p-5 border shadow-2xl shadow-green-950/50"
+            >
               <div className="grid md:grid-cols-3 gap-10">
                 <div className="md:col-span-3 flex flex-col">
                   <label htmlFor="teamname" className="text-lg font-semibold">
-                    School Name
+                    School Name*
                   </label>
                   <input
                     type="text"
@@ -120,7 +153,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                 {/* teacher 1 */}
                 <div className="flex flex-col">
                   <label htmlFor="teachname" className="text-lg font-semibold">
-                    Teacher-InCharge Name
+                    Teacher-InCharge Name*
                   </label>
                   <input
                     type="text"
@@ -135,7 +168,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                 </div>
                 <div className="flex flex-col">
                   <label htmlFor="teachmail" className="text-lg font-semibold">
-                    Teacher-InCharge Email
+                    Teacher-InCharge Email*
                   </label>
                   <input
                     type="email"
@@ -150,7 +183,7 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                 </div>
                 <div className="flex flex-col">
                   <label htmlFor="teachmail" className="text-lg font-semibold">
-                    Teacher-InCharge Phone
+                    Teacher-InCharge Phone*
                   </label>
                   <input
                     type="text"
@@ -172,8 +205,11 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                 {teamMembers.map((member, index) => (
                   <div key={index} className="grid md:grid-cols-3 gap-10 mt-4">
                     <div className="flex flex-col">
-                      <label htmlFor={`member-name-${index}`} className="text-lg font-semibold">
-                        Member {index + 1} Name
+                      <label
+                        htmlFor={`member-name-${index}`}
+                        className="text-lg font-semibold"
+                      >
+                        Member {index + 1} Name*
                       </label>
                       <input
                         type="text"
@@ -181,13 +217,18 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                         name={`member-name-${index}`}
                         className="border-2 p-2 mt-2"
                         value={member.name}
-                        onChange={(e) => handleTeamMemberChange(index, "name", e.target.value)}
+                        onChange={(e) =>
+                          handleTeamMemberChange(index, "name", e.target.value)
+                        }
                         required
                       />
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor={`member-email-${index}`} className="text-lg font-semibold">
-                        Member {index + 1} Email
+                      <label
+                        htmlFor={`member-email-${index}`}
+                        className="text-lg font-semibold"
+                      >
+                        Member {index + 1} Email*
                       </label>
                       <input
                         type="email"
@@ -195,13 +236,18 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                         name={`member-email-${index}`}
                         className="border-2 p-2 mt-2"
                         value={member.email}
-                        onChange={(e) => handleTeamMemberChange(index, "email", e.target.value)}
+                        onChange={(e) =>
+                          handleTeamMemberChange(index, "email", e.target.value)
+                        }
                         required
                       />
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor={`member-email-${index}`} className="text-lg font-semibold">
-                        Member {index + 1} Phone Number
+                      <label
+                        htmlFor={`member-email-${index}`}
+                        className="text-lg font-semibold"
+                      >
+                        Member {index + 1} Phone Number*
                       </label>
                       <input
                         type="text"
@@ -209,7 +255,13 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                         name={`member-phone-${index}`}
                         className="border-2 p-2 mt-2"
                         value={member.phoneno}
-                        onChange={(e) => handleTeamMemberChange(index, "phoneno", e.target.value)}
+                        onChange={(e) =>
+                          handleTeamMemberChange(
+                            index,
+                            "phoneno",
+                            e.target.value,
+                          )
+                        }
                         required
                       />
                     </div>
@@ -217,13 +269,25 @@ export default function RegisterPage({ params }: { params: Promise<{ slug: strin
                 ))}
               </div>
               <div className="flex flex-col md:flex-row mt-5">
-                <button type="submit" className="px-4 py-2 bg-green-950 text-white">
-                  Register
-                </button>
+                <div className="flex flex-col">
+                  <button
+                    type="submit"
+                    className="px-4 py-2 bg-green-950 text-white"
+                  >
+                    Register
+                  </button>
+                  <span className="text-red-500 text-sm">*required</span>
+                </div>
                 <div className="mt-2 px-5 text-center md:text-left">
                   {isLoading && <p className="text-green-800">Loading...</p>}
-                  {isError && <p className="text-red-500">An error occurred. Please try again.</p>}
-                  {isSuccess && <p className="text-green-500">Registration successful!</p>}
+                  {isError && (
+                    <p className="text-red-500">
+                      An error occurred. Please try again.
+                    </p>
+                  )}
+                  {isSuccess && (
+                    <p className="text-green-500">Registration successful!</p>
+                  )}
                 </div>
               </div>
             </form>

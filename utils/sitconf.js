@@ -1,5 +1,6 @@
 const sitetitle = "Extraquadrata V4";
-const sitedesc = "Technology like art is a soaring exercise of the human imagination.” To be steady with our motion of development, it is vital for the youth to grasp every facet of technology and innovation. DPS Kolar Road has taken an initiative to contribute to this field. Extraquadrata would be our very first annual tech meet up hosted by and for high schoolers which will be held on the 6th of August. Our competitions would test the participant’s creativity and logical thinking to response time and sheer skill for tech savvies to people who crave to be";
+const sitedesc =
+  "Technology like art is a soaring exercise of the human imagination.” To be steady with our motion of development, it is vital for the youth to grasp every facet of technology and innovation. DPS Kolar Road has taken an initiative to contribute to this field. Extraquadrata would be our very first annual tech meet up hosted by and for high schoolers which will be held on the 6th of August. Our competitions would test the participant’s creativity and logical thinking to response time and sheer skill for tech savvies to people who crave to be";
 
 const herotitle = "Extraquadrata V4";
 const herodesc =
@@ -17,7 +18,9 @@ const events = [
       <ul>
         <li>One team per school (2 members, Classes 8–12).</li>
         <li>2 rounds: prelims and main quiz (top 6 qualify).</li>
-        <li>Topics: IT current affairs, tech giants, AI, retro tech (1970s–90s).</li>
+        <li>
+          Topics: IT current affairs, tech giants, AI, retro tech (1970s–90s).
+        </li>
         <li>Unfair means lead to disqualification.</li>
         <li>Committee decisions are final.</li>
       </ul>
@@ -33,9 +36,17 @@ const events = [
     rules: (
       <ul>
         <li>One team per school (2 members, Classes 9–12).</li>
-        <li>Build a website and presentation on a given topic during the event.</li>
-        <li>Any tech stack allowed; templates and AI tools (except autonomous agents) permitted.</li>
-        <li>Judged on creativity, presentation, relevance, performance, and design.</li>
+        <li>
+          Build a website and presentation on a given topic during the event.
+        </li>
+        <li>
+          Any tech stack allowed; templates and AI tools (except autonomous
+          agents) permitted.
+        </li>
+        <li>
+          Judged on creativity, presentation, relevance, performance, and
+          design.
+        </li>
         <li>Unfair means lead to disqualification.</li>
         <li>Committee decisions are final.</li>
       </ul>
@@ -68,7 +79,9 @@ const events = [
     rules: (
       <ul>
         <li>One team per school (2–3 members, Classes 9–12).</li>
-        <li>Bring a pre-built line follower robot; knockout races on event day.</li>
+        <li>
+          Bring a pre-built line follower robot; knockout races on event day.
+        </li>
         <li>Brackets decided on the spot.</li>
         <li>No external control or shortcuts; bring your own equipment.</li>
         <li>Unfair means lead to disqualification.</li>
@@ -88,27 +101,12 @@ const events = [
         <li>One team per school (2 members, Classes 6–8).</li>
         <li>2 phases: UHC and BedWars; participation in both required.</li>
         <li>Any Minecraft Java client allowed (version 1.8.9).</li>
-        <li>Build Battle: submit a ≤4 min MP4 video with commentary by 30th July; original builds only.</li>
+        <li>
+          Build Battle: submit a ≤4 min MP4 video with commentary by 30th July;
+          original builds only.
+        </li>
         <li>No hacked clients; plagiarism leads to disqualification.</li>
         <li>Further details on Discord.</li>
-      </ul>
-    ),
-  },
-  {
-    name: "parabellum",
-    slug: "parabellum",
-    description:
-      "Dive into the electrifying world of esports at our premier gaming event. Immerse yourself in the realm of competitive gaming, where top-tier gamers clash in epic battles. Witness the latest gaming innovations, join discussions on the future of esports, and experience the thrill of victory and the agony of defeat in a dynamic fusion of skill, strategy, and adrenaline.",
-    shortDescription:
-      "An esports event showcasing skill, strategy, and adrenaline.",
-    rules: (
-      <ul>
-        <li>One team per school (5 players + 1 sub, Classes 9–12).</li>
-        <li>All matches online; playoffs Bo1, semis/finals Bo3.</li>
-        <li>Players must use registered Riot ID; no coaches.</li>
-        <li>Max 3 timeouts/team; 10 min for technical issues.</li>
-        <li>Match fixing or unfair means lead to disqualification.</li>
-        <li>Committee decisions are final.</li>
       </ul>
     ),
   },
@@ -136,7 +134,9 @@ const events = [
       <ul>
         <li>One participant per school (Classes 9–12).</li>
         <li>Pick a topic from provided options.</li>
-        <li>Create 4 social media posts, a profile picture, bio, and hashtags.</li>
+        <li>
+          Create 4 social media posts, a profile picture, bio, and hashtags.
+        </li>
       </ul>
     ),
   },
@@ -185,28 +185,32 @@ const core_mem = [
   {
     name: "Varad Sharma",
     role: "Head",
-    profile: "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
+    profile:
+      "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
     image: "/favicon.svg",
   },
   {
     name: "Aarush Shrivastava",
     role: "Head",
-    profile: "Aarush Shrivastava is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
+    profile:
+      "Aarush Shrivastava is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
     image: "/favicon.svg",
-  }
+  },
 ];
 
 const team_leads = [
   {
     name: "Aarush Shrivastava",
     role: "Scio",
-    profile: "Aarush is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
+    profile:
+      "Aarush is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
     image: "/favicon.svg",
   },
   {
     name: "Varad Sharma",
     role: "Esprit Decode, Site Incroyable",
-    profile: "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
+    profile:
+      "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
     image: "/favicon.svg",
   },
   {
@@ -214,7 +218,7 @@ const team_leads = [
     role: "Polemos",
     profile: ".",
     image: "/favicon.svg",
-  }
+  },
 ];
 
 const event_mem = [
@@ -238,7 +242,18 @@ const alumini = [
     role: "Alumini",
     profile: ".",
     image: "/favicon.svg",
-  }
+  },
 ];
 
-export { events, sitetitle, sitedesc, herotitle, herodesc, info_blocks, core_mem, team_leads, event_mem, alumini };
+export {
+  events,
+  sitetitle,
+  sitedesc,
+  herotitle,
+  herodesc,
+  info_blocks,
+  core_mem,
+  team_leads,
+  event_mem,
+  alumini,
+};
