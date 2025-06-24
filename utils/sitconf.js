@@ -74,8 +74,8 @@ const events = [
   {
     name: "suiveur",
     slug: "suiveur",
-    description: "This is a description for the fourth event.",
-    shortDescription: "A brief description of the fourth event.",
+    description: "Race showdown of line follower robots",
+    shortDescription: "Race showdown of line follower robots",
     rules: (
       <ul>
         <li>One team per school (2–3 members, Classes 9–12).</li>
@@ -113,14 +113,14 @@ const events = [
   {
     name: "lux veritas implicas",
     slug: "lux-veritas-imlica",
-    description: "This is a description for the seventh event.",
-    shortDescription: "A brief description of the seventh event.",
+    description: "Online scavanger and cryptic hunt.",
+    shortDescription: "Online scavanger and cryptic hunt.",
     rules: (
       <ul>
         <li>Open to all; multiple participants per school (Classes 6–12).</li>
         <li>Online scavenger hunt with cryptic clues.</li>
         <li>Fastest to solve all clues wins.</li>
-        <li>Unfair means lead to disqualification.</li>
+        <li>Unfair means will lead to disqualification.</li>
         <li>Committee decisions are final.</li>
       </ul>
     ),
@@ -128,8 +128,9 @@ const events = [
   {
     name: "chroma",
     slug: "chroma",
-    description: "This is a description for the sixth event.",
-    shortDescription: "A brief description of the sixth event.",
+    description: "Social media management competiton.",
+    shortDescription:
+      "A competition on how can make the best social media page with details given on-spot with random attributes.",
     rules: (
       <ul>
         <li>One participant per school (Classes 9–12).</li>
@@ -143,8 +144,9 @@ const events = [
   {
     name: "memesis",
     slug: "memesis",
-    description: "This is a description for the seventh event.",
-    shortDescription: "A brief description of the seventh event.",
+    description: "AI-gen meme making competition.",
+    shortDescription:
+      "A competition where participants are expected to generate quality memes using AI tools on the given specifics on-spot.",
     rules: (
       <ul>
         <li>One team per school (2 members, Classes 5–6).</li>
