@@ -72,65 +72,42 @@ const events = [
     ),
   },
   {
-    name: "suiveur",
-    slug: "suiveur",
-    description: "Race showdown of line follower robots",
-    shortDescription: "Race showdown of line follower robots",
-    rules: (
-      <ul>
-        <li>One team per school (2–3 members, Classes 9–12).</li>
-        <li>
-          Bring a pre-built line follower robot; knockout races on event day.
-        </li>
-        <li>Brackets decided on the spot.</li>
-        <li>No external control or shortcuts; bring your own equipment.</li>
-        <li>Unfair means lead to disqualification.</li>
-        <li>Committee decisions are final.</li>
-      </ul>
-    ),
-  },
-  {
-    name: "polemos",
-    slug: "polemos",
+    name: "lux captis",
+    slug: "lux-captis",
     description:
-      "Minecraft UHC and BuildBattle are thrilling minigames that captivate players by fusing strategy and creativity. Bedwars challenges teams to protect their beds while launching daring offensives, while BuildBattle lets players unleash artistic prowess within Minecraft's blocky world. These games celebrate the core spirit of Minecraft and have thrived by fostering a sense of camaraderie and endless creativity. They're a testament to the game's enduring appeal, thriving thanks to a dedicated community that constantly innovates, creating a timeless blend of strategy, artistry, and shared fun.",
-    shortDescription:
-      "Minecraft minigames blending strategy, creativity, and teamwork.",
+      "Embark on a visual journey through the lens at our exclusive photography event. Elevate your appreciation of the art as we showcase the works of renowned photographers, explore cutting-edge techniques, and engage in thought-provoking discussions on visual storytelling. A harmonious convergence of artistry, innovation, and inspiration awaits.",
+    shortDescription: "Photography event.",
     rules: (
       <ul>
-        <li>One team per school (2 members, Classes 6–8).</li>
-        <li>2 phases: UHC and BedWars; participation in both required.</li>
-        <li>Any Minecraft Java client allowed (version 1.8.9).</li>
+        <li>Judged on creativity, composition, and storytelling.</li>
+        <li>The theme will be provided on the spot.</li>
         <li>
-          Build Battle: submit a ≤4 min MP4 video with commentary by 30th July;
-          original builds only.
+          Each participant has to send 2 photographs: 1 photograph for each
+          theme.
         </li>
-        <li>No hacked clients; plagiarism leads to disqualification.</li>
-        <li>Further details on Discord.</li>
-      </ul>
-    ),
-  },
-  {
-    name: "lux veritas implicas",
-    slug: "lux-veritas-imlica",
-    description: "Online scavanger and cryptic hunt.",
-    shortDescription: "Online scavanger and cryptic hunt.",
-    rules: (
-      <ul>
-        <li>Open to all; multiple participants per school (Classes 6–12).</li>
-        <li>Online scavenger hunt with cryptic clues.</li>
-        <li>Fastest to solve all clues wins.</li>
-        <li>Unfair means will lead to disqualification.</li>
-        <li>Committee decisions are final.</li>
+        <li>Participants have to attach their raw image(if any).</li>
+        <li>
+          Participants need to provide the Exif(Exchangeable Image File Format)
+          details along with each of their entries.
+        </li>
+        <li>
+          Any type of Manipulation is not allowed; however, basic
+          post-processing will be considered.
+        </li>
+        <li>
+          Participants may bring their own computers to run basic edits(at their
+          own risk).
+        </li>
+        <li>The format for the photographs to be submitted in .jpeg.</li>
       </ul>
     ),
   },
   {
     name: "chroma",
     slug: "chroma",
-    description: "Social media management competiton.",
-    shortDescription:
+    description:
       "A competition on how can make the best social media page with details given on-spot with random attributes.",
+    shortDescription: "Social media management competiton.",
     rules: (
       <ul>
         <li>One participant per school (Classes 9–12).</li>
@@ -179,21 +156,21 @@ const info_blocks = [
   {
     k: 4,
     head: "number of events",
-    subtext: "9 - 3 online + 6 offline",
+    subtext: "6 offline",
   },
 ];
 
 const core_mem = [
   {
     name: "Varad Sharma",
-    role: "Head",
+    role: "CyberDirector Student Council'25",
     profile:
       "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
     image: "/favicon.svg",
   },
   {
     name: "Aarush Shrivastava",
-    role: "Head",
+    role: "TechClub President",
     profile:
       "Aarush Shrivastava is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
     image: "/favicon.svg",
@@ -210,7 +187,7 @@ const team_leads = [
   },
   {
     name: "Varad Sharma",
-    role: "Esprit Decode, Site Incroyable",
+    role: "EspritDecode, SiteIncroyable",
     profile:
       "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
     image: "/favicon.svg",
@@ -218,16 +195,16 @@ const team_leads = [
   {
     name: "Anshuman Pandey",
     role: "Polemos",
-    profile: ".",
+    profile: "",
     image: "/favicon.svg",
   },
 ];
 
 const event_mem = [
   {
-    name: "Anshuman Pandey",
-    role: "Event 1",
-    profile: ".",
+    name: "",
+    role: "",
+    profile: "",
     image: "/favicon.svg",
   },
 ];
@@ -235,14 +212,14 @@ const event_mem = [
 const alumini = [
   {
     name: "Dhairya Garg",
-    role: "Alumini",
-    profile: ".",
+    role: "CyberDirector'23",
+    profile: "",
     image: "/favicon.svg",
   },
   {
-    name: "Om Pratap Dhakar",
-    role: "Alumini",
-    profile: ".",
+    name: "Shreshth Verma",
+    role: "CyberDirector'22",
+    profile: "",
     image: "/favicon.svg",
   },
 ];

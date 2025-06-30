@@ -15,39 +15,41 @@ export default function TechfestTeam() {
       <NavBar />
       <div className="output flex flex-col h-screen backdrop-brightness-50 font-mono animate-(--textflicker)">
         <div className="mt-5">
-          <TypewriterEffect words={words_head} className="text-2xl md:text-6xl font-bold uppercase" cursorClassName="md:h-[3rem] md:w-[32px]" />
+          <TypewriterEffect
+            words={words_head}
+            className="text-2xl md:text-6xl font-bold uppercase"
+            cursorClassName="md:h-[3rem] md:w-[32px]"
+          />
         </div>
         {/* core members */}
         <div className="max-w-7xl mx-auto mt-10">
           <div className="mt-5">
-            <TypewriterEffect words={[{ text: "thecore", className: "text-xl md:text-4xl font-bold uppercase" }]} className="text-2xl md:text-6xl font-bold uppercase text-left" cursorClassName="md:h-[2rem] md:w-[32px]" />
+            <TypewriterEffect
+              words={[
+                {
+                  text: "thecore",
+                  className: "text-xl md:text-4xl font-bold uppercase",
+                },
+              ]}
+              className="text-2xl md:text-6xl font-bold uppercase text-left"
+              cursorClassName="md:h-[2rem] md:w-[32px]"
+            />
           </div>
           <div className=" mt-10 grid md:grid-cols-2 gap-10">
             {core_mem.map((member, key) => (
-              <div key={key}
+              <div
+                key={key}
                 className={cn(
-                  "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50"
-                )}>
-                <Image src={member.image} alt={member.name} height={200} width={200} className="" />
-                <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
-                <p className="text-lg">{member.role}</p>
-                <p className="mt-5 text-sm">{member.profile}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        {/* alumini members */}
-        <div className="max-w-7xl mx-auto mt-10">
-          <div className="mt-5">
-            <TypewriterEffect words={[{ text: "alumini", className: "text-xl md:text-4xl font-bold uppercase" }]} className="text-2xl md:text-6xl font-bold uppercase text-left" cursorClassName="md:h-[2rem] md:w-[32px]" />
-          </div>
-          <div className=" mt-10 grid md:grid-cols-2 gap-10">
-            {alumini.map((member, key) => (
-              <div key={key}
-                className={cn(
-                  "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50"
-                )}>
-                <Image src={member.image} alt={member.name} height={200} width={200} className="" />
+                  "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50",
+                )}
+              >
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  height={200}
+                  width={200}
+                  className=""
+                />
                 <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
                 <p className="text-lg">{member.role}</p>
                 <p className="mt-5 text-sm">{member.profile}</p>
@@ -58,15 +60,32 @@ export default function TechfestTeam() {
         {/* team leads */}
         <div className="max-w-7xl mx-auto mt-10">
           <div className="mt-5">
-            <TypewriterEffect words={[{ text: "leaders", className: "text-xl md:text-4xl font-bold uppercase" }]} className="text-2xl md:text-6xl font-bold uppercase text-left" cursorClassName="md:h-[2rem] md:w-[32px]" />
+            <TypewriterEffect
+              words={[
+                {
+                  text: "leaders",
+                  className: "text-xl md:text-4xl font-bold uppercase",
+                },
+              ]}
+              className="text-2xl md:text-6xl font-bold uppercase text-left"
+              cursorClassName="md:h-[2rem] md:w-[32px]"
+            />
           </div>
           <div className=" mt-10 grid md:grid-cols-2 gap-10">
             {team_leads.map((member, key) => (
-              <div key={key}
+              <div
+                key={key}
                 className={cn(
-                  "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50"
-                )}>
-                <Image src={member.image} alt={member.name} height={200} width={200} className="" />
+                  "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50",
+                )}
+              >
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  height={200}
+                  width={200}
+                  className=""
+                />
                 <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
                 <p className="text-lg">{member.role}</p>
                 <p className="mt-5 text-sm">{member.profile}</p>
@@ -77,15 +96,68 @@ export default function TechfestTeam() {
         {/* event members */}
         <div className="max-w-7xl mx-auto mt-10">
           <div className="mt-5">
-            <TypewriterEffect words={[{ text: "members", className: "text-xl md:text-4xl font-bold uppercase" }]} className="text-2xl md:text-6xl font-bold uppercase text-left" cursorClassName="md:h-[2rem] md:w-[32px]" />
+            <TypewriterEffect
+              words={[
+                {
+                  text: "members",
+                  className: "text-xl md:text-4xl font-bold uppercase",
+                },
+              ]}
+              className="text-2xl md:text-6xl font-bold uppercase text-left"
+              cursorClassName="md:h-[2rem] md:w-[32px]"
+            />
           </div>
           <div className=" mt-10 grid md:grid-cols-2 gap-10">
             {event_mem.map((member, key) => (
-              <div key={key}
+              <div
+                key={key}
                 className={cn(
-                  "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50"
-                )}>
-                <Image src={member.image} alt={member.name} height={200} width={200} className="" />
+                  "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50",
+                )}
+              >
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  height={200}
+                  width={200}
+                  className=""
+                />
+                <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
+                <p className="text-lg">{member.role}</p>
+                <p className="mt-5 text-sm">{member.profile}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* alumini members */}
+        <div className="max-w-7xl mx-auto mt-10">
+          <div className="mt-5">
+            <TypewriterEffect
+              words={[
+                {
+                  text: "leagacy",
+                  className: "text-xl md:text-4xl font-bold uppercase",
+                },
+              ]}
+              className="text-2xl md:text-6xl font-bold uppercase text-left"
+              cursorClassName="md:h-[2rem] md:w-[32px]"
+            />
+          </div>
+          <div className=" mt-10 grid md:grid-cols-2 gap-10">
+            {alumini.map((member, key) => (
+              <div
+                key={key}
+                className={cn(
+                  "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50",
+                )}
+              >
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  height={200}
+                  width={200}
+                  className=""
+                />
                 <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
                 <p className="text-lg">{member.role}</p>
                 <p className="mt-5 text-sm">{member.profile}</p>
@@ -97,5 +169,5 @@ export default function TechfestTeam() {
       <div className="piece scanlines noclick"></div>
       <div className="piece glow noclick"></div>
     </section>
-  )
+  );
 }

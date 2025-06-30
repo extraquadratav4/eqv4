@@ -32,7 +32,7 @@ export default function EventList() {
             <div
               key={key}
               className={cn(
-                key == 0 || key == 7 ? "md:col-span-2 text-center" : "",
+                key == 0 || key == 5 ? "md:col-span-2 text-center" : "",
                 key == 2 || key == 4 || key == 6 ? "text-right" : "",
                 "transition-all border p-5 shadow-2xl shadow-green-950/50",
               )}
