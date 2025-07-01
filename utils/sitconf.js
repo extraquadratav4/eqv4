@@ -140,23 +140,18 @@ const events = [
 const info_blocks = [
   {
     k: 1,
-    head: "offline events will start on",
+    head: "event will start on",
     subtext: "6th August, 2025",
   },
   {
     k: 2,
-    head: "online events will start on",
-    subtext: "3rd August, 2025",
-  },
-  {
-    k: 3,
     head: "registrations from",
     subtext: "1st July - 20th July, 2025",
   },
   {
-    k: 4,
+    k: 3,
     head: "number of events",
-    subtext: "6 offline",
+    subtext: "6 (in-person)",
   },
 ];
 
