@@ -34,20 +34,20 @@ export default function EventList() {
               className={cn(
                 key == 0 || key == 5 ? "md:col-span-2 text-center" : "",
                 key == 2 || key == 4 || key == 6 ? "text-right" : "",
-                "transition-all border p-5 shadow-2xl shadow-green-950/50",
+                "transition border p-5 shadow-2xl shadow-green-950/50",
               )}
             >
               <p className="font-bold text-4xl mb-1">{eventinf.name}</p>
               <p className="text-lg">{eventinf.shortDescription}</p>
               <Link
                 href={`/register/${eventinf.slug}`}
-                className="text-lg mx-5"
+                className="text-lg mx-5 transition"
               >
                 register
               </Link>
               <Drawer>
                 <DrawerTrigger asChild className="mt-5">
-                  <button className="hover:bg-green-950 px-4 py-2 border">
+                  <button className="hover:bg-green-950 transition px-4 py-2 border">
                     <span className="text-lg font-semibold">view rules</span>
                   </button>
                 </DrawerTrigger>
