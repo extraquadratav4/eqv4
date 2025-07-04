@@ -50,10 +50,8 @@ export async function POST(request: Request) {
     const teamSizes: { [key: string]: number } = {
       scio: 2,
       "esprit-decode": 2,
-      suiveur: 3,
-      polemos: 2,
-      parabellum: 6,
-      "lux-veritas-implicas": 1,
+      "site-incroyable": 2,
+      "lux-captis": 1,
       chroma: 1,
       memesis: 2,
     };
