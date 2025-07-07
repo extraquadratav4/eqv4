@@ -70,7 +70,7 @@ export default function AdminPage() {
           {RenderTeams(siteTeams, "Site Teams")}
           {RenderTeams(decodeTeams, "Decode Teams")}
           {RenderTeams(memesisTeams, "Memesis Teams")}
-          {RenderTeams(photoTeams, "Robot Teams")}
+          {RenderTeams(photoTeams, "Photography Teams")}
           {RenderTeams(socialTeams, "Social Teams")}
         </div>
       </div>
