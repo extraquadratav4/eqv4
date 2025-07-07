@@ -11,11 +11,8 @@ export default function AdminPage() {
   const [scioTeams, setScioTeams] = useState<Team[]>([]);
   const [siteTeams, setSiteTeams] = useState<Team[]>([]);
   const [decodeTeams, setDecodeTeams] = useState<Team[]>([]);
-  const [parabellumTeams, setParabellumTeams] = useState<Team[]>([]);
-  const [polemosTeams, setPolemosTeams] = useState<Team[]>([]);
-  const [scavengerTeams, setScavengerTeams] = useState<Team[]>([]);
   const [memesisTeams, setMemesisTeams] = useState<Team[]>([]);
-  const [robotTeams, setRobotTeams] = useState<Team[]>([]);
+  const [photoTeams, setPhotoTeams] = useState<Team[]>([]);
   const [socialTeams, setSocialTeams] = useState<Team[]>([]);
 
   useEffect(() => {
@@ -30,11 +27,8 @@ export default function AdminPage() {
         setScioTeams(teamsData.filter((team: Team) => team.event === "scio"));
         setSiteTeams(teamsData.filter((team: Team) => team.event === "site-incroyable"));
         setDecodeTeams(teamsData.filter((team: Team) => team.event === "esprit-decode"));
-        setParabellumTeams(teamsData.filter((team: Team) => team.event === "parabellum"));
-        setPolemosTeams(teamsData.filter((team: Team) => team.event === "polemos"));
-        setScavengerTeams(teamsData.filter((team: Team) => team.event === "lux-veritas-implicas"));
         setMemesisTeams(teamsData.filter((team: Team) => team.event === "memesis"));
-        setRobotTeams(teamsData.filter((team: Team) => team.event === "suiver"));
+        setPhotoTeams(teamsData.filter((team: Team) => team.event === "lux-captis"));
         setSocialTeams(teamsData.filter((team: Team) => team.event === "chroma"));
       } catch (error) {
         console.error('Error fetching teams:', error);
@@ -75,11 +69,8 @@ export default function AdminPage() {
           {RenderTeams(scioTeams, "Scio Teams")}
           {RenderTeams(siteTeams, "Site Teams")}
           {RenderTeams(decodeTeams, "Decode Teams")}
-          {RenderTeams(parabellumTeams, "Parabellum Teams")}
-          {RenderTeams(polemosTeams, "Polemos Teams")}
-          {RenderTeams(scavengerTeams, "Scavenger Teams")}
           {RenderTeams(memesisTeams, "Memesis Teams")}
-          {RenderTeams(robotTeams, "Robot Teams")}
+          {RenderTeams(photoTeams, "Robot Teams")}
           {RenderTeams(socialTeams, "Social Teams")}
         </div>
       </div>
