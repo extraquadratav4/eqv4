@@ -1,6 +1,6 @@
 const sitetitle = "Extraquadrata V4";
 const sitedesc =
-  "Technology like art is a soaring exercise of the human imagination.” To be steady with our motion of development, it is vital for the youth to grasp every facet of technology and innovation. DPS Kolar Road has taken an initiative to contribute to this field. Extraquadrata would be our very first annual tech meet up hosted by and for high schoolers which will be held on the 6th of August. Our competitions would test the participant’s creativity and logical thinking to response time and sheer skill for tech savvies to people who crave to be";
+  "Technology like art is a soaring exercise of the human imagination.” To be steady with our motion of development, it is vital for the youth to grasp every facet of technology and innovation. DPS Kolar Road has taken an initiative to contribute to this field. Extraquadrata would be our fourth annual tech meet up hosted by and for high schoolers which will be held on the 6th of August. Our competitions would test the participant’s creativity and logical thinking to response time and sheer skill for tech savvies to people who crave to be";
 
 const herotitle = "Extraquadrata V4";
 const herodesc =
@@ -159,15 +159,13 @@ const core_mem = [
   {
     name: "Varad Sharma",
     role: "CyberDirector Student Council'25",
-    profile:
-      "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
+    profile: "",
     image: "/favicon.svg",
   },
   {
     name: "Aarush Shrivastava",
     role: "TechClub President",
-    profile:
-      "Aarush Shrivastava is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
+    profile: "",
     image: "/favicon.svg",
   },
 ];
@@ -176,20 +174,18 @@ const team_leads = [
   {
     name: "Aarush Shrivastava",
     role: "Scio",
-    profile:
-      "Aarush is an enterprising 9th grader. He is a curious quizzer, and a true technology connoisseur. He is fond of Mathematics, Artificial Intelligence, and Economics. When he’s free, you can find him gaming or playing chess. He takes a great interest in debating, understanding foreign relations and getting to know about the latest happenings of the world. He is associated with the school’s ATL and aspires to make an Artificially Intelligent robot this year.",
+    profile: "",
     image: "/favicon.svg",
   },
   {
     name: "Varad Sharma",
     role: "EspritDecode, SiteIncroyable",
-    profile:
-      "Varad is an enthusiastic supporter of Free and open source software (FOSS), using and contributing to Linux. A VIM user, an upcoming programmer, and a web developer, he believes that 'Vim was the best thing created by mankind'",
+    profile: "",
     image: "/favicon.svg",
   },
   {
     name: "Anshuman Pandey",
-    role: "Polemos",
+    role: "EspritDecode",
     profile: "",
     image: "/favicon.svg",
   },
