@@ -15,6 +15,10 @@ export default function AdminPage() {
   const [photoTeams, setPhotoTeams] = useState<Team[]>([]);
   const [socialTeams, setSocialTeams] = useState<Team[]>([]);
 
+  const [password, setPassword] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const HARDCODED_PASSWORD = "eqv4admin2025"; // Change as needed
+
   useEffect(() => {
     async function fetchTeams() {
       try {
@@ -57,6 +61,40 @@ export default function AdminPage() {
           ))}
         </div>
       </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <section className="h-screen flex items-center justify-center bg-opacity-80">
+        <form
+          className="p-8 rounded shadow-md flex flex-col gap-4 min-w-[300px]"
+          onSubmit={e => {
+            e.preventDefault();
+            if (password === HARDCODED_PASSWORD) {
+              setIsAuthenticated(true);
+            } else {
+              alert("Incorrect password");
+            }
+          }}
+        >
+          <h2 className="text-xl font-bold mb-2 text-center">Admin Login</h2>
+          <input
+            type="password"
+            className="border p-2 rounded"
+            placeholder="Enter password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            autoFocus
+          />
+          <button
+            type="submit"
+            className="bg-blue-600 text-white rounded p-2 hover:bg-blue-700 transition"
+          >
+            Login
+          </button>
+        </form>
+      </section>
     );
   }
 
