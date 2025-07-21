@@ -1,5 +1,13 @@
 import mongoose from "mongoose";
 
+export interface Teacher {
+  _id: mongoose.Types.ObjectId;
+  school: string;
+  email: string;
+  phoneno: string;
+  name: string;
+}
+
 const teacherSchema = new mongoose.Schema({
   school: {
     type: String,

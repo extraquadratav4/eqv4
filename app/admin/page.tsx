@@ -105,11 +105,14 @@ export default function AdminPage() {
         <h1 className="text-4xl font-bold text-center mb-8">Admin Page</h1>
         <div className="space-y-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {RenderTeams(scioTeams, `Scio Teams - ${scioTeams.length}`)}
-          {RenderTeams(siteTeams, `Site Teams - ${scioTeams.length}`)}
-          {RenderTeams(decodeTeams, `Decode Teams - ${scioTeams.length}`)}
-          {RenderTeams(memesisTeams, `Memesis Teams - ${scioTeams.length}`)}
-          {RenderTeams(photoTeams, `Photography Teams - ${scioTeams.length}`)}
-          {RenderTeams(socialTeams, `Socials Teams - ${scioTeams.length}`)}
+          {RenderTeams(siteTeams, `Site Teams - ${siteTeams.length}`)}
+          {RenderTeams(decodeTeams, `Decode Teams - ${decodeTeams.length}`)}
+          {RenderTeams(memesisTeams, `Memesis Teams - ${memesisTeams.length}`)}
+          {RenderTeams(photoTeams, `Photography Teams - ${photoTeams.length}`)}
+          {RenderTeams(socialTeams, `Socials Teams - ${socialTeams.length}`)}
+        </div>
+        <div>
+
         </div>
       </div>
       <div className="piece scanlines noclick"></div>
