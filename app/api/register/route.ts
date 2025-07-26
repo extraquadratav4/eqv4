@@ -51,6 +51,9 @@ export async function POST(request: Request) {
       scio: 2,
       "esprit-decode": 2,
       "site-incroyable": 2,
+      suiveur: 3,
+      polemos: 2,
+      parabellum: 6,
       "lux-captis": 1,
       chroma: 1,
       memesis: 2,
@@ -88,7 +91,13 @@ export async function POST(request: Request) {
       teacherId = newTeacher._id;
     } catch (error) {
       console.error("Error creating teacher:", error);
-      return new Response(JSON.stringify({ message: error }), { status: 400 });
+      return new Response(
+        JSON.stringify({
+          message:
+            error instanceof Error ? error.message : "Error creating teacher",
+        }),
+        { status: 400 }
+      );
     }
 
     // Create members
@@ -99,9 +108,15 @@ export async function POST(request: Request) {
         memberIds.push(newMember._id);
       } catch (error) {
         console.error("Error creating member:", error);
-        return new Response(JSON.stringify({ message: error }), {
-          status: 400,
-        });
+        return new Response(
+          JSON.stringify({
+            message:
+              error instanceof Error ? error.message : "Error creating member",
+          }),
+          {
+            status: 400,
+          }
+        );
       }
     }
 
