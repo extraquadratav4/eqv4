@@ -146,7 +146,7 @@ const info_blocks = [
   {
     k: 2,
     head: "registrations from",
-    subtext: "1st July - 28th July, 2025",
+    subtext: "1st July - 30th July, 2025",
   },
   {
     k: 3,
