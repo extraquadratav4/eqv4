@@ -8,14 +8,16 @@ const createMember = async (memberData: {
   phoneno: string;
   email: string;
 }) => {
-  const existingMember = await member.findOne({ email: memberData.email });
+  const existingMember = await member.findOne({
+    email: memberData.email.toLowerCase(),
+  });
   if (existingMember) {
     throw new Error(`Member with email ${memberData.email} already exists`);
   }
   const newMember = new member({
     name: memberData.name,
     phoneno: memberData.phoneno,
-    email: memberData.email,
+    email: memberData.email.toLowerCase(),
   });
   await newMember.save();
   return newMember;
@@ -27,14 +29,19 @@ const createTeacher = async (teacherData: {
   email: string;
   phoneno: string;
 }) => {
-  const existingTeacher = await teacher.findOne({ email: teacherData.email });
+  const existingTeacher = await teacher.findOne({
+    email: teacherData.email.toLowerCase(),
+  });
   if (existingTeacher) {
     console.log(
       `Teacher with email ${teacherData.email} already exists, continuing with the existing one`
     );
     return existingTeacher;
   }
-  const newTeacher = new teacher(teacherData);
+  const newTeacher = new teacher({
+    ...teacherData,
+    email: teacherData.email.toLowerCase(),
+  });
   await newTeacher.save();
   return newTeacher;
 };
@@ -79,9 +86,58 @@ export async function POST(request: Request) {
     }
 
     if (members.length !== teamSizes[event]) {
-      return new Response(`Invalid team size for event ${event}`, {
-        status: 400,
-      });
+      return new Response(
+        JSON.stringify({
+          message: `Invalid team size for event ${event}. Expected ${teamSizes[event]} members, got ${members.length}.`,
+        }),
+        {
+          status: 400,
+        }
+      );
+    }
+
+    // Check for duplicate emails within the current request
+    const allEmails = [
+      teacherData.email,
+      ...members.map((member: { email: string }) => member.email),
+    ];
+    const emailSet = new Set();
+    const duplicateEmails = [];
+
+    for (const email of allEmails) {
+      if (emailSet.has(email.toLowerCase())) {
+        duplicateEmails.push(email);
+      } else {
+        emailSet.add(email.toLowerCase());
+      }
+    }
+
+    if (duplicateEmails.length > 0) {
+      return new Response(
+        JSON.stringify({
+          message: `Duplicate emails found in the registration: ${duplicateEmails.join(
+            ", "
+          )}. Each person must have a unique email address.`,
+        }),
+        { status: 400 }
+      );
+    }
+
+    // Check if any email already exists in database
+    const existingMembers = await member.find({
+      email: { $in: allEmails.map((email) => email.toLowerCase()) },
+    });
+
+    if (existingMembers.length > 0) {
+      const existingEmails = existingMembers.map((m) => m.email);
+      return new Response(
+        JSON.stringify({
+          message: `The following email(s) are already registered: ${existingEmails.join(
+            ", "
+          )}. Please use different email addresses.`,
+        }),
+        { status: 400 }
+      );
     }
 
     // Create or validate teacher
@@ -100,7 +156,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Create members
+    // Create members (we already validated no duplicates exist)
     const memberIds = [];
     for (const memberData of members) {
       try {
