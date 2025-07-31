@@ -43,15 +43,19 @@ export default function TechfestTeam() {
                   "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50",
                 )}
               >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  height={200}
-                  width={200}
-                  className=""
-                />
-                <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
-                <p className="text-lg">{member.role}</p>
+                <div className="flex flex-row">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    height={200}
+                    width={200}
+                    className=""
+                  />
+                  <div className="flex-col p-5">
+                    <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
+                    <p className="text-lg">{member.role}</p>
+                  </div>
+                </div>
                 <p className="mt-5 text-sm">{member.profile}</p>
               </div>
             ))}
@@ -63,7 +67,11 @@ export default function TechfestTeam() {
             <TypewriterEffect
               words={[
                 {
-                  text: "leaders",
+                  text: "team",
+                  className: "text-xl md:text-4xl font-bold uppercase",
+                },
+                {
+                  text: "leads",
                   className: "text-xl md:text-4xl font-bold uppercase",
                 },
               ]}
@@ -79,15 +87,19 @@ export default function TechfestTeam() {
                   "transition-all border p-5 shadow-2xl shadow-green-950/50 z-50",
                 )}
               >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  height={200}
-                  width={200}
-                  className=""
-                />
-                <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
-                <p className="text-lg">{member.role}</p>
+                <div className="flex flex-row">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    height={200}
+                    width={200}
+                    className=""
+                  />
+                  <div className="flex-col p-5">
+                    <h2 className="mt-5 text-4xl font-bold">{member.name}</h2>
+                    <p className="text-lg">{member.role}</p>
+                  </div>
+                </div>
                 <p className="mt-5 text-sm">{member.profile}</p>
               </div>
             ))}
