@@ -172,7 +172,7 @@ const core_mem = [
 
 const team_leads = [
   {
-    name: "Akshada Prajapati",
+    name: "Akshda Prajapati",
     role: "Chroma",
     profile:
       "Meet Akshda Prajapati, a spirited 11th grader and the powerhouse team lead behind Chroma at Extraquadrata! With a love for books, a deep curiosity for psychology, and the occasional doom scroll detour, Akshda brings both heart and insight to the table. She’s not one to flaunt achievements—yet—but her leadership, calm energy, and eye for detail are already making waves. With Akshda at the helm, Chroma is more than just an event—it’s a perfectly-coded experience in the making.",
