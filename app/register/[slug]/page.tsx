@@ -134,16 +134,16 @@ export default function RegisterPage({
 
   return (
     <section className="h-screen background-image bg-cover bg-center">
-      {slug.slug !== "scio" &&
-        slug.slug !== "esprit-decode" &&
-        slug.slug !== "site-incroyable" &&
-        slug.slug !== "suiveur" &&
-        slug.slug !== "polemos" &&
-        slug.slug !== "parabellum" &&
-        slug.slug !== "lux-captis" &&
-        slug.slug !== "chroma" &&
-        slug.slug !== "memesis" ? (
-        <h1>this event does not exist</h1>
+      {slug.slug !== "scio-old" &&
+        slug.slug !== "esprit-decode-old" &&
+        slug.slug !== "site-incroyable-old" &&
+        slug.slug !== "suiveur-old" &&
+        slug.slug !== "polemos-old" &&
+        slug.slug !== "parabellum-old" &&
+        slug.slug !== "lux-captis-old" &&
+        slug.slug !== "chroma-old" &&
+        slug.slug !== "memesis-old" ? (
+        <h1>this event does not exist or the registrations are closed</h1>
       ) : (
         <div className="piece output flex flex-col items-center h-screen backdrop-brightness-50 font-mono animate-(--textflicker)">
           <NavBar />
