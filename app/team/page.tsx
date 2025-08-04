@@ -13,7 +13,7 @@ export default function TechfestTeam() {
   return (
     <section className="h-screen background-image bg-cover bg-center">
       <NavBar />
-      <div className="output flex flex-col h-screen backdrop-brightness-50 font-mono animate-(--textflicker)">
+      <div className="output flex flex-col h-screen backdrop-brightness-50 z-[100000] font-mono animate-(--textflicker)">
         <div className="mt-5">
           <TypewriterEffect
             words={words_head}
@@ -178,7 +178,7 @@ export default function TechfestTeam() {
           </div>
         </div>
       </div>
-      <div className="piece scanlines noclick"></div>
+      {/* <div className="piece scanlines noclick"></div> */}
       <div className="piece glow noclick"></div>
     </section>
   );

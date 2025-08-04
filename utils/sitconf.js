@@ -159,14 +159,14 @@ const core_mem = [
   {
     name: "Varad Sharma",
     role: "CyberDirector Student Council'25",
-    profile: "",
+    profile: "Varad Sharrma, an eleventh-grade student at DPS Kolar, channels a rare synergy of analytical rigor and creative exploration. As Cyber Director of the Student Council and a lead organizer at ExtraQuadrata, he plays a pivotal role in shaping the school’s tech community. A devoted open-source advocate and active contributor to the FOSS ecosystem, Varad brings technical fluency across AI, robotics, systems programming, and infrastructure, driven by a desire to “max out his tech stats.” His passion for computing runs deep, rooted in a love for Linux, a near-religious reverence for VIM (“VIM was the best thing made by mankind”), and a fascination with low-level control and elegant code. A multi-time national hackathon champion and international Olympiad medalist, Varad balances intensity with personality, spending downtime gaming, listening to metal, pulling all-nighters to refactor entire codebases, or tinkering with Arch Linux. He is steadily building toward an impactful future in the tech space.",
     image: "/favicon.svg",
   },
   {
     name: "Aarush Shrivastava",
     role: "TechClub President",
-    profile: "",
-    image: "/favicon.svg",
+    profile: "Aarush Shrivastava, an eleventh-grade student at DPS Kolar, blends logical precision with creative energy. He leads Headway, the school’s tech club, and curates intellectually engaging experiences as the quizmaster of Scio. With a string of national-level victories across diverse quiz domains—spanning technology, general knowledge, heritage, and wildlife—he has rightfully earned the moniker of a “quizzard.” His fascination with mathematics, especially algebra and number theory, drives his academic journey. This passion has led him to qualify for prestigious Math Olympiads and pursue deeper explorations in the field. He is currently pursuing his high school diploma focused on PCM and Artificial Intelligence. Aarush channels his curiosity towards uncovering the intersections of logic, pattern, and computational intelligence. \n In his free time, he finds balance through gaming with the lads, meme-making, and engaging in some 'footy'. He approaches every pursuit (whether academic or recreational) with a competitive outlook. In sum, with a rare combination of intellect, initiative, and vision, he aimsto build a compelling path towards a future shaped by mathematics, AI, and purposeful discovery.",
+    image: "/aarush.jpg",
   },
 ];
 
@@ -177,6 +177,24 @@ const team_leads = [
     profile:
       "Meet Akshda Prajapati, a spirited 11th grader and the powerhouse team lead behind Chroma at Extraquadrata! With a love for books, a deep curiosity for psychology, and the occasional doom scroll detour, Akshda brings both heart and insight to the table. She’s not one to flaunt achievements—yet—but her leadership, calm energy, and eye for detail are already making waves. With Akshda at the helm, Chroma is more than just an event—it’s a perfectly-coded experience in the making.",
     image: "/akshada.jpg",
+  },
+  {
+    name: "Deepanshi Singh",
+    role: "Social Media",
+    profile: "Deepanshi Singh is the Social Media Lead as well as one of the Team leader for Chroma, one of the standout events at Extraquadrata. With a knack for visuals, witty captions, and the occasional meme rescue mission, she’s the force behind the event’s digital presence. While she’s not chasing trophies just yet, her creativity, consistency, and screen sense keep the buzz alive. When she’s not crafting posts or battling editing apps, you’ll find her with a book, sketching or an awesome playlist.",
+    image: "/deepanshi.jpg",
+  },
+  {
+    name: "Divyansh Bahal",
+    role: "Lux Captis",
+    profile: "Divyansh, a perceptive and passionate Grade 11 student, leads LuxCaptive with a sharp eye for detail and an unshakable dedication to visual storytelling. As the creative force behind the photography vertical of Extra Quadrata, he merges artistic instinct with structured vision, crafting an experience where authenticity, emotion, and composition come alive. Guided by a deep respect for raw, unfiltered expression, Divyansh not only captures moments — he inspires others to see the world through a more meaningful lens.",
+    image: "/favicon.svg",
+  },
+  {
+    name: "Shourya Raghuwanshi",
+    role: "Memesis",
+    profile: "Shorya raghuvanshi is a dedicated student of 8th grade recognizes himself as a young logical scholar with a strong background in computer technology and a passion for practical application. he has some hobbies like video editing and playing chess. His skill in combining creativity with technical accuracy shows a careful and focused approach to his studies and practical work. Outside academics, he is an good swimmer, balancing intellectual pursuits with physical discipline, and showcasing a well-rounded approach to both learning and personal growth.",
+    image: "/shourya.jpg",
   },
   {
     name: "Anshuman Pandey",
