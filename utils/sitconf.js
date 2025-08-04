@@ -172,19 +172,6 @@ const core_mem = [
 
 const team_leads = [
   {
-    name: "Akshda Prajapati",
-    role: "Chroma",
-    profile:
-      "Meet Akshda Prajapati, a spirited 11th grader and the powerhouse team lead behind Chroma at Extraquadrata! With a love for books, a deep curiosity for psychology, and the occasional doom scroll detour, Akshda brings both heart and insight to the table. She’s not one to flaunt achievements—yet—but her leadership, calm energy, and eye for detail are already making waves. With Akshda at the helm, Chroma is more than just an event—it’s a perfectly-coded experience in the making.",
-    image: "/akshada.jpg",
-  },
-  {
-    name: "Deepanshi Singh",
-    role: "Social Media",
-    profile: "Deepanshi Singh is the Social Media Lead as well as one of the Team leader for Chroma, one of the standout events at Extraquadrata. With a knack for visuals, witty captions, and the occasional meme rescue mission, she’s the force behind the event’s digital presence. While she’s not chasing trophies just yet, her creativity, consistency, and screen sense keep the buzz alive. When she’s not crafting posts or battling editing apps, you’ll find her with a book, sketching or an awesome playlist.",
-    image: "/deepanshi.jpg",
-  },
-  {
     name: "Divyansh Bahal",
     role: "Lux Captis",
     profile: "Divyansh, a perceptive and passionate Grade 11 student, leads LuxCaptive with a sharp eye for detail and an unshakable dedication to visual storytelling. As the creative force behind the photography vertical of Extra Quadrata, he merges artistic instinct with structured vision, crafting an experience where authenticity, emotion, and composition come alive. Guided by a deep respect for raw, unfiltered expression, Divyansh not only captures moments — he inspires others to see the world through a more meaningful lens.",
@@ -197,17 +184,30 @@ const team_leads = [
     image: "/shourya.jpg",
   },
   {
-    name: "Anshuman Pandey",
-    role: "EspritDecode",
-    profile: "",
-    image: "/favicon.svg",
+    name: "Varil Mahere",
+    role: "Esprit Decode",
+    profile: "Varil is a curious and driven individual with a keen interest in emerging technologies. Fascinated by the world of Machine Learning and Deep Learning, they enjoy exploring how intelligent systems work and how algorithms can solve real-world problems. With a creative mindset and a love for experimentation, Varil continues to learn, build, and grow in the ever-evolving tech space.",
+    image: "/varil.jpg",
+  },
+  {
+    name: "Akshda Prajapati",
+    role: "Chroma",
+    profile:
+      "Meet Akshda Prajapati, a spirited 11th grader and the powerhouse team lead behind Chroma at Extraquadrata! With a love for books, a deep curiosity for psychology, and the occasional doom scroll detour, Akshda brings both heart and insight to the table. She’s not one to flaunt achievements—yet—but her leadership, calm energy, and eye for detail are already making waves. With Akshda at the helm, Chroma is more than just an event—it’s a perfectly-coded experience in the making.",
+    image: "/akshada.jpg",
+  },
+  {
+    name: "Deepanshi Singh",
+    role: "Social Media",
+    profile: "Deepanshi Singh is the Social Media Lead as well as one of the Team leader for Chroma, one of the standout events at Extraquadrata. With a knack for visuals, witty captions, and the occasional meme rescue mission, she’s the force behind the event’s digital presence. While she’s not chasing trophies just yet, her creativity, consistency, and screen sense keep the buzz alive. When she’s not crafting posts or battling editing apps, you’ll find her with a book, sketching or an awesome playlist.",
+    image: "/deepanshi.jpg",
   },
 ];
 
 const event_mem = [
   {
-    name: "",
-    role: "",
+    name: "Anshuman Pandey",
+    role: "Esprit Decode",
     profile: "",
     image: "/favicon.svg",
   },
